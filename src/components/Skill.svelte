@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Title from './Title.svelte';
+	import Icon from './Icon.svelte';
 	// This should not be duplicated, fix this later
 	type IconType =
 		| 'github'
@@ -10,7 +12,6 @@
 		| 'uiux'
 		| 'backend'
 		| 'js';
-	import Icon from './Icon.svelte';
 	export let icon: IconType;
 	export let title: string;
 	export let color = 'bg-primary-500';
@@ -24,10 +25,10 @@
 	<div class="p-6 relative z-10 flex items-center gap-4">
 		<Icon {icon} color="white" size="lg" />
 		<div>
-			<h3 class=" text-2xl font-semibold">
+			<Title size="xs" heading="h3">
 				{title}
-			</h3>
-			<div class="text-md">
+			</Title>
+			<div class="text-sm lg:text-md">
 				<slot name="description" />
 			</div>
 		</div>
