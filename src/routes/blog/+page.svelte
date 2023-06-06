@@ -10,9 +10,11 @@
 </svelte:head>
 
 <section class="mb.24">
-	<div class="px-8 py-14 border-b border-tertiary-500 text-tertiary-500 text-center">
+	<div
+		class="px-4 py-10 md:px-8 md:py-14 border-b border-tertiary-500 text-tertiary-500 text-center"
+	>
 		<Title style="mb-2">The Blog</Title>
-		<p class="text-lg">Sometimes I try to write stuff and it would end up here.</p>
+		<p class="text-md md:text-lg">Sometimes I try to write stuff and it would end up here.</p>
 	</div>
 	<ul class="m-0 flex flex-col">
 		{#each data.markdown as post}
