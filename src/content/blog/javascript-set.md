@@ -1,5 +1,5 @@
 ---
-title: Sets
+title: Javascript Sets
 description: The Set object is an unordered collection of unique values. It allows you to store any type of value, whether it be primitive data types or object references.
 date: Jun 4, 2023
 image: ''

@@ -1,5 +1,5 @@
 ---
-title: Maps
+title: Javascript Maps
 description: JavaScript Map is an ordered collection of key-value pairs, where each key is unique. Unlike plain objects Maps allow any value, including objects, as keys and provide built-in methods for efficient data manipulation.
 date: Jun 1, 2023
 image: ''
