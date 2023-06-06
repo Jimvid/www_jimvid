@@ -9,11 +9,13 @@
 </svelte:head>
 
 <section>
-	<div class=" px-8 py-14 border-b border-tertiary-500 text-tertiary-500 text-center">
+	<div
+		class="px-4 py-10 md:px-8 md:py-14 border-b border-tertiary-500 text-tertiary-500 text-center"
+	>
 		<Title style="mb-2">Snippets</Title>
-		<p class="text-lg">Simple and short solutions that can be copied and pasted.</p>
+		<p class="text-md md:text-lg">Simple and short solutions that can be copied and pasted.</p>
 	</div>
-	<section class="flex flex-col gap-14">
+	<section class="flex flex-col">
 		<table class="text-tertiary-500">
 			<thead
 				class="border-b bg-tertiary-500 text-surface-400 border-tertiary-500 font-bold border-accent"
@@ -27,10 +29,10 @@
 			<tbody>
 				{#each data.markdown as post}
 					<tr
-						class="text-sm border-b border-tertiary-500 last:border-transparent hover:bg-darker rounded"
+						class="text-sm border-b hover:bg-surface-300 relative border-tertiary-500 hover:bg-darker rounded"
 					>
 						<td class="p-6 font-semibold">
-							<a href={post.path}>
+							<a class="table-link" href={post.path}>
 								{post.title}
 							</a>
 						</td>
@@ -40,5 +42,17 @@
 				{/each}
 			</tbody>
 		</table>
+		<div class="w-full p-10" />
 	</section>
 </section>
+
+<style>
+	.table-link::after {
+		top: 0;
+		left: 0;
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+</style>

@@ -7,7 +7,7 @@
 	<meta name="description" content="single snippet" />
 </svelte:head>
 
-<section class="post">
+<section class="post h-full">
 	<h1 class="text-2xl lg:text-3xl">{data.title}</h1>
 	<p class="opacity-60 mb-6">{data.date}</p>
 	<div>
