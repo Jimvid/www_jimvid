@@ -8,6 +8,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
+			layouts: 'src/layouts',
 			components: 'src/components',
 			content: 'src/content'
 		}
