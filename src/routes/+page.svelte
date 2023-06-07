@@ -17,8 +17,8 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Victor Jimvid | Developer and design enthusiast</title>
+	<meta name="description" content="Victor Jimvid | Developer and design enthusiast" />
 </svelte:head>
 
 <section class="flex flex-col justify-center text-center py-12 px-4 md:px-8">

@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>Posts</title>
+	<title>Victor Jimvid | The Blog</title>
 	<meta name="description" content="Posts" />
 </svelte:head>
 

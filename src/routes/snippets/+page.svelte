@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>Snippets</title>
+	<title>Victor Jimvid | Snippets</title>
 	<meta name="description" content="Snippets" />
 </svelte:head>
 
