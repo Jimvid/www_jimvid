@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Title from 'components/Title.svelte';
+	import Hero from 'layouts/Hero.svelte';
 	export let data;
 </script>
 
@@ -9,12 +9,9 @@
 </svelte:head>
 
 <section>
-	<div
-		class="px-4 py-10 md:px-8 md:py-14 border-b border-tertiary-500 text-tertiary-500 text-center"
-	>
-		<Title style="mb-2">Snippets</Title>
-		<p class="text-md md:text-lg">Simple and short solutions that can be copied and pasted.</p>
-	</div>
+	<Hero title="Snippets">
+		<p slot="inner-content">Simple and short solutions that can be copied and pasted.</p>
+	</Hero>
 	<section class="flex flex-col">
 		<table class="text-tertiary-500">
 			<thead

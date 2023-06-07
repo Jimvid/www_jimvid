@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Title from 'components/Title.svelte';
 	import Post from 'components/Post.svelte';
+	import Hero from 'layouts/Hero.svelte';
 	export let data;
 </script>
 
@@ -9,13 +9,10 @@
 	<meta name="description" content="Posts" />
 </svelte:head>
 
-<section class="mb.24">
-	<div
-		class="px-4 py-10 md:px-8 md:py-14 border-b border-tertiary-500 text-tertiary-500 text-center"
-	>
-		<Title style="mb-2">The Blog</Title>
-		<p class="text-md md:text-lg">Sometimes I try to write stuff and it would end up here.</p>
-	</div>
+<section class="mb-24">
+	<Hero title="The Blog">
+		<p slot="inner-content">Sometimes I try to write stuff and it would end up here.</p>
+	</Hero>
 	<ul class="m-0 flex flex-col">
 		{#each data.markdown as post}
 			<li class="border-b border-tertiary-500 last:border-transparent">

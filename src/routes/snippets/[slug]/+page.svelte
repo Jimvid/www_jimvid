@@ -1,16 +1,15 @@
 <script lang="ts">
+	import Article from 'layouts/Article.svelte';
 	export let data;
 </script>
 
 <svelte:head>
-	<title>single post</title>
-	<meta name="description" content="single snippet" />
+	<title>Blog | {data.title}</title>
+	<meta name="description" content="single post" />
 </svelte:head>
 
-<section class="post h-full">
-	<h1 class="text-2xl lg:text-3xl">{data.title}</h1>
-	<p class="opacity-60 mb-6">{data.date}</p>
-	<div>
+<Article title={data.title} date={data.date}>
+	<div slot="article-content" class="font-[400] py-8">
 		{@html data.content}
 	</div>
-</section>
+</Article>
