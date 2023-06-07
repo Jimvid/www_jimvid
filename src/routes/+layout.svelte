@@ -3,7 +3,7 @@
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	import '../app.postcss';
 	import { AppShell } from '@skeletonlabs/skeleton';
-	import Header from '../components/Header.svelte';
+	import Navbar from '../components/Navbar.svelte';
 	import Footer from '../components/Footer.svelte';
 </script>
 
@@ -14,9 +14,9 @@
 		slotFooter="border-y border-tertiary-500 bg-tertiary-500"
 	>
 		<svelte:fragment slot="header">
-			<Header />
+			<Navbar />
 		</svelte:fragment>
-		<div id="test" class="col-start-2 col-end-3 border-x border-tertiary-500">
+		<div id="page-content" class="col-start-2 col-end-3 border-x border-tertiary-500">
 			<slot />
 		</div>
 		<svelte:fragment slot="footer">
@@ -26,4 +26,7 @@
 </div>
 
 <style>
+	#page-content {
+		min-height: calc(100vh - 158px);
+	}
 </style>
