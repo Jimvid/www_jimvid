@@ -1,37 +1,5 @@
 import { error } from '@sveltejs/kit';
 
-export type Repository = {
-	name: string;
-	created_at: string;
-	language: string;
-	html_url: string;
-};
-
-export type RepositoryOption = {
-	page: number;
-	perPage: number;
-};
-
-export const getAllRepos: (url: string, opt: RepositoryOption) => Promise<Repository[]> = async (
-	url,
-	opt
-) => {
-	try {
-		const response = await fetch(`${url}?page=${opt.page}&per_page=${opt.perPage}`);
-
-		if (response.ok) {
-			const repos = await response.json();
-			return repos.sort((a: Repository, b: Repository) => {
-				return new Date(a.created_at) > new Date(b.created_at) ? -1 : 1;
-			});
-		} else {
-			console.log(`Request failed with status code ${response.status}.`);
-		}
-	} catch (error) {
-		console.error('An error occurred:', error);
-	}
-};
-
 export type Markdown<T> = T & {
 	path: string;
 };
