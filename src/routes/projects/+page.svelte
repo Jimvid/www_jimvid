@@ -1,8 +1,6 @@
 <script>
-	import Title from 'components/Title.svelte';
-
+	import Hero from 'layouts/Hero.svelte';
 	export let data;
-	console.log(data);
 </script>
 
 <svelte:head>
@@ -11,10 +9,9 @@
 </svelte:head>
 
 <section>
-	<div class="px-8 py-14 border-b border-tertiary-500 text-tertiary-500 text-center">
-		<Title style="mb-2">Projects</Title>
-		<p class="text-lg">A list of my recent projects on github.</p>
-	</div>
+	<Hero title="Projects">
+		<p slot="inner-content">A list of my recent projects on github.</p>
+	</Hero>
 	<ul class="grid grid-cols-3">
 		{#each data.markdown as repo}
 			<li class="aspect-[16/9] outline outline-1">
