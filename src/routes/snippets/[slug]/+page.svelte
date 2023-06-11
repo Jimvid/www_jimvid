@@ -9,7 +9,7 @@
 </svelte:head>
 
 <Article title={data.title} date={data.date}>
-	<div slot="article-content" class="font-[400] py-8">
+	<div slot="article-content">
 		{@html data.content}
 	</div>
 </Article>

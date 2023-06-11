@@ -12,7 +12,7 @@
 	<Hero title="Snippets">
 		<p slot="inner-content">Simple and short solutions that can be copied and pasted.</p>
 	</Hero>
-	<section class="flex flex-col">
+	<section class="flex flex-col overflow-scroll">
 		<table>
 			<thead class="border-b bg-surface-200 dark:bg-accent border-accent font-bold">
 				<tr>
@@ -26,13 +26,13 @@
 					<tr
 						class="text-sm border-b hover:bg-surface-200 dark:hover:bg-accent relative border-accent"
 					>
-						<td class="p-6 font-semibold">
+						<td class="p-4 font-semibold">
 							<a class="table-link" href={post.path}>
 								{post.title}
 							</a>
 						</td>
-						<td class="p-6">{post.description}</td>
-						<td class="p-6">{post.date}</td>
+						<td class="min-w-[300px] p-4">{post.description}</td>
+						<td class="min-w-[200px] p-4">{post.date}</td>
 					</tr>
 				{/each}
 			</tbody>

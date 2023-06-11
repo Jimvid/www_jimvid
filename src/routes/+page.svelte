@@ -27,7 +27,7 @@
 <section class="bg-tertiary-100 dark:bg-tertiary-500 pb-12 md:pb-24">
 	<Title heading="h2" size="lg" style="p-4 md:p-8">Skills</Title>
 	<ul class="grid grid-cols-1 md:grid-cols-2">
-		<li class="md:border-b border-t border-r border-accent">
+		<li class="md:border-b border-t border-accent md:border-r">
 			<Skill title="HTML & CSS" color="bg-secondary-500" href="skills/html-css" icon="html">
 				<p slot="description">Interactive experiences & Responsive layouts</p>
 			</Skill>
@@ -37,7 +37,7 @@
 				<p slot="description">Frontend development & Single page apps</p>
 			</Skill>
 		</li>
-		<li class="border-b border-r border-accent">
+		<li class="border-b border-accent md:border-r">
 			<Skill href="/skills/backend" title="Backend" icon="backend" color="bg-error-400">
 				<p slot="description">Content management & Dynamic websites</p>
 			</Skill>
