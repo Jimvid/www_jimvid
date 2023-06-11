@@ -11,8 +11,7 @@
 	<div class="text-lg md:text-xl">
 		<slot name="description" />
 	</div>
-	<a
-		class="flex-shrink-0 flex gap-2 items-center px-4 py-2 border-2 border-tertiary-500"
-		href={next_url}>{next_label}<Icon icon="arrow" /></a
+	<a class="flex-shrink-0 flex gap-2 items-center px-4 py-2 border-2 border-accent" href={next_url}
+		>{next_label}<Icon icon="arrow" /></a
 	>
 </section>

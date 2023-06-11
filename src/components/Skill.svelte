@@ -20,10 +20,10 @@
 
 <a {href} class="flex items-center h-full relative group">
 	<div
-		class="absolute w-2 z-0 transition-all group-hover:w-full hover:border-r-transparent {color} h-full border-r border-black"
+		class="absolute w-2 z-0 transition-all group-hover:w-full {color} h-full border-r border-accent"
 	/>
 	<div class="p-6 relative z-10 flex items-center gap-4">
-		<Icon {icon} color="white" size="lg" />
+		<Icon {icon} size="lg" />
 		<div>
 			<Title size="xs" heading="h3">
 				{title}

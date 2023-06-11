@@ -5,7 +5,7 @@
 </script>
 
 <section class="h-full">
-	<header class="py-8 md:py-12 border-b border-tertiary-500">
+	<header class="py-8 md:py-12 border-b border-accent">
 		<Title style="max-w-3xl px-4 m-auto mb-1 md:mb-4">
 			{title}
 		</Title>

@@ -15,7 +15,7 @@
 	</Hero>
 	<ul class="m-0 flex flex-col">
 		{#each data.markdown as post}
-			<li class="border-b border-tertiary-500 last:border-transparent">
+			<li class="border-b border-accent last:border-transparent">
 				<Post {post} />
 			</li>
 		{/each}

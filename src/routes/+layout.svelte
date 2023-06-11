@@ -7,16 +7,18 @@
 	import Footer from '../components/Footer.svelte';
 </script>
 
-<div class="app bg-surface-500 text-tertiary-500 font-medium min-h-screen">
+<div
+	class="app bg-surface-50 text-bg-tertiary-500 dark:bg-surface-500 dark:text-tertiary-100 font-medium min-h-screen"
+>
 	<AppShell
 		class="row-span-2"
 		slotPageContent="max-w-content w-full grid grid-cols-[1rem_minmax(0,_1fr)_1rem] m-auto "
-		slotFooter="border-y border-tertiary-500 bg-tertiary-500"
+		slotFooter="border-y border-accent bg-tertiary-500"
 	>
 		<svelte:fragment slot="header">
 			<Navbar />
 		</svelte:fragment>
-		<div id="page-content" class="col-start-2 col-end-3 border-x border-tertiary-500">
+		<div id="page-content" class="col-start-2 col-end-3 border-x border-accent">
 			<slot />
 		</div>
 		<svelte:fragment slot="footer">
