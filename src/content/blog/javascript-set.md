@@ -10,7 +10,7 @@ The **`Set`** object is an unordered collection of unique values. It allows you 
 
 To create a **`Set`**, we simply invoke the **`Set`** constructor without any arguments. Here's an example:
 
-```tsx
+```js
 const mySet = new Set();
 
 // Add to the Set

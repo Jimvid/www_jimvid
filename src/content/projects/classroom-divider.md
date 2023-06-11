@@ -11,7 +11,7 @@ making it easy to divide them into groups. The project included the functionalit
 who were absent and the ability to save the groups for future use. The goal was to provide teachers with a
 user-friendly tool that simplified class management and facilitated group division.
 
-Technologies used:
+## Technologies used
 
 - React (NextJS)
 - Tailwind

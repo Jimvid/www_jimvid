@@ -11,7 +11,7 @@
 		</Title>
 		<p class="max-w-3xl mb-0 px-4 m-auto text-md opacity-70">Published: {date}</p>
 	</header>
-	<article>
+	<article class="post">
 		<div class="content max-w-3xl m-auto p-4">
 			<div class="font-[400] py-8">
 				<slot name="article-content" />
@@ -19,3 +19,6 @@
 		</div>
 	</article>
 </section>
+
+<style>
+</style>

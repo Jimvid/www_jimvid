@@ -12,13 +12,13 @@ Both rem and em are flexible and scalable units of measurement unlike the px uni
 When the browser translate rem into pixel it depends on the font size of the page’s root element, the html element. That font size is multiplied by whatever number you’re using with your rem unit.
 For example, with a root element font size of 20px, 10 rem would equal 200px (10 x 20 = 200).
 
-```
+```css
 html {
-  font-size: 20px;
+	font-size: 20px;
 }
 
 .rem {
-  padding: 10rem; /* this equals 200px (10 x 20 = 200) */
+	padding: 10rem; /* this equals 200px (10 x 20 = 200) */
 }
 ```
 
@@ -26,10 +26,10 @@ html {
 
 When using em units, the pixel value you end up with is the font-size of the element you are styling. For example, if a div has the font size of 20px, 10em would equate to 200px (10 x 20 = 200).
 
-```
+```css
 .em {
-  font-size: 20px;
-  padding: 10em; /* this equals 200px (10 x 20 = 200) */
+	font-size: 20px;
+	padding: 10em; /* this equals 200px (10 x 20 = 200) */
 }
 ```
 
