@@ -11,9 +11,9 @@
 	class="app bg-surface-50 text-bg-tertiary-500 dark:bg-surface-500 dark:text-tertiary-100 font-medium min-h-screen"
 >
 	<AppShell
-		class="row-span-2"
+		class="row-span-2 h-full flex flex-col"
 		slotPageContent="max-w-content w-full grid grid-cols-[1rem_minmax(0,_1fr)_1rem] m-auto "
-		slotFooter="border-y border-accent bg-tertiary-500"
+		slotFooter="border-y border-accent bg-surface-50 dark:bg-tertiary-500"
 	>
 		<svelte:fragment slot="header">
 			<Navbar />
@@ -29,6 +29,6 @@
 
 <style>
 	#page-content {
-		min-height: calc(100vh - 158px);
+		min-height: calc(100vh - 144px);
 	}
 </style>
