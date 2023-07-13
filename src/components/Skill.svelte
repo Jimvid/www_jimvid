@@ -22,7 +22,7 @@
 	<div
 		class="absolute w-2 z-0 transition-all group-hover:w-full {color} h-full border-r border-accent"
 	/>
-	<div class="p-6 relative z-10 flex items-center gap-4">
+	<div class="p-6 relative z-0 flex items-center gap-4">
 		<Icon {icon} size="lg" />
 		<div>
 			<Title size="xs" heading="h3">
