@@ -8,7 +8,7 @@
 	<div>
 		<slot name="title" />
 	</div>
-	<div class="text-lg md:text-xl">
+	<div class="text-lg md:text-xl font-normal">
 		<slot name="description" />
 	</div>
 	<a class="flex-shrink-0 flex gap-2 items-center px-4 py-2 border-2 border-accent" href={next_url}
