@@ -18,7 +18,7 @@
 			building robust server-side logic that powers these interfaces. My dedication lies in crafting
 			seamless software solutions that cover every aspect, from front to back.
 		</p>
-		<Title size="xs" heading="h2" style="mt-4 mb-2">Technologies that I currently use:</Title>
+		<p class="mt-8 mb-4">Technologies that i use:</p>
 		<ul class="list-disc list-inside ml-2">
 			<li>Node</li>
 			<li>Express</li>

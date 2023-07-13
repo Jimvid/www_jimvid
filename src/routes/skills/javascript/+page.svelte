@@ -12,7 +12,7 @@
 			developments, I have worked extensively with a great variety of web technologies, including
 			Typescript, React, Svelte, Node, and plain old vanilla JavaScript.
 		</p>
-		<Title size="xs" heading="h2" style="mt-4 mb-2">Technologies that I currently use:</Title>
+		<p class="mt-8 mb-4">Technologies that i currently enjoy:</p>
 		<ul class="list-disc list-inside ml-2">
 			<li>Typescript</li>
 			<li>NextJS</li>

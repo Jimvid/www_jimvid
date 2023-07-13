@@ -1,10 +1,10 @@
 <script>
-	import SkillPage from 'components/SkillPage.svelte';
+	import SkillPage from 'layouts/SkillPage.svelte';
 	import Title from 'components/Title.svelte';
 </script>
 
 <svelte:head>
-	<title>Skills - Backend</title>
+	<title>Skills - UI/UX</title>
 	<meta name="description" content="" />
 </svelte:head>
 
@@ -13,12 +13,12 @@
 	<div slot="description">
 		<p>
 			Even though my primary focus is development, I possess a keen eye for design and have the
-			ability to create visually stunning designs that not only catch the eye but also enhance
+			ability to create aesthetically appealing designs that not only catch the eye but also enhance
 			usability. With my technical background and expertise, I offer a distinct perspective that
 			allows me to effectively contribute to the development of design systems and bridge the gap
 			between development and design.
 		</p>
-		<Title size="xs" heading="h2" style="mt-4 mb-2">Software that I currently use:</Title>
+		<p class="mt-8 mb-4">Technologies that i use:</p>
 		<ul class="list-disc list-inside ml-2">
 			<li>Figma</li>
 		</ul>

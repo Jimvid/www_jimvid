@@ -5,7 +5,7 @@
 
 <section>
 	<div class="border-b border-accent">
-		<nav class="p-4 flex gap-2 text-white bg-tertiary-500">
+		<nav class="p-4 flex gap-2 dark:text-white dark:bg-tertiary-500">
 			Skills:
 			<ul class="flex gap-4">
 				<li>
@@ -32,6 +32,6 @@
 
 <style>
 	a[aria-current='true'] {
-		border-bottom: 2px solid #9ce0ab;
+		border-bottom: 2px solid #7761ff;
 	}
 </style>
