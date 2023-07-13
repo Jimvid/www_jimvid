@@ -17,7 +17,8 @@
 		| 'html'
 		| 'uiux'
 		| 'backend'
-		| 'js';
+		| 'js'
+		| 'hamburger';
 
 	const iconSize = {
 		sm: '5',
@@ -131,6 +132,10 @@
 				class="stroke-{color}"
 			/></svg
 		>
+	{:else if icon === 'hamburger'}
+		<svg class="text-{color} fill-current" width="18" height="16" viewBox="0 0 18 16" fill="none">
+			<path d="M0 0H18V2H0V0ZM0 7H12V9H0V7ZM0 14H18V16H0V14Z" />
+		</svg>
 	{:else if icon === 'uiux'}
 		<svg class="text-{color} stroke-current fill-transparent" viewBox="0 0 24 24"
 			><path d="M.5.5h23v23H.5z" /><circle cx="10.737" cy="10.737" r="5.184" /><path
