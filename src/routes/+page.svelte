@@ -90,7 +90,7 @@
 				href="/snippets"
 			>
 				View all snippets
-				<Icon icon="arrow" size="sm" />
+				<Icon icon="arrow" darkColor="bg-surface-500" size="sm" />
 			</a>
 		</li>
 	</ul>
