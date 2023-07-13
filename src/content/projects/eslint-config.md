@@ -6,5 +6,6 @@ tags: ['Javascript']
 image: ''
 ---
 
-For easily getting small projects up and running I made my own ESlint config.
-[Link to github](https://github.com/Jimvid/eslint-config-jimvid)
+For easily getting small projects up and running I made my own ESlint config. It extends airbnb with a few tweaks and additional rules to fit me and my projects a bit better. It supports both JS and TS.
+
+Check it out on <a href="https://github.com/Jimvid/eslint-config-jimvid" target="_blank">Github</a>.

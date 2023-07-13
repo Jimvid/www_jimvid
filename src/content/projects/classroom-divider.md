@@ -21,6 +21,4 @@ user-friendly tool that simplified class management and facilitated group divisi
 - Sequelize
 - Auth0.
 
-[Link to front-end on Github](https://github.com/Jimvid/classroom-divider-client-vite)
-
-[Link to back-end on Github](https://github.com/Jimvid/classroom-divider-api)
+Check out the <a href="https://github.com/Jimvid/classroom-divider-client-vite" target="_blank">front-end</a> or <a href="https://github.com/Jimvid/classroom-divider-api" target="_blank">back-end</a> code on GitHub.

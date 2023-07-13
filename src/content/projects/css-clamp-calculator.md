@@ -17,6 +17,4 @@ With the help of the calculator, we could ensure a consistent and responsive des
 - Tailwind
 - Preact
 
-[Link to website](https://viewport-clamp.jimvid.com/)
-
-[Link to github](https://github.com/Jimvid/viewport-clamp-calculator)
+Feel free to check it out in <a href="https://viewport-clamp.jimvid.com/" target="_blank">action</a> or view the <a href="https://github.com/Jimvid/viewport-clamp-calculator">code</a> on Github.
