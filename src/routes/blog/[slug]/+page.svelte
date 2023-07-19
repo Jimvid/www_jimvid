@@ -8,7 +8,7 @@
 	<meta name="description" content="single post" />
 </svelte:head>
 
-<Article title={data.title} date={data.date}>
+<Article title={data?.title || ''} date={data?.date || ''}>
 	<div slot="article-content">
 		{@html data.content}
 	</div>

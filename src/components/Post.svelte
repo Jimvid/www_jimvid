@@ -5,18 +5,18 @@
 		title: string;
 		description: string;
 		date: string;
-		path: string;
+		slug: string;
 		tags: string[];
 	};
 	export let post: Post;
 	export let size: 'xs' | 'sm' | 'md' | 'lg' | 'xl' = 'sm';
 	export let heading: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' = 'h2';
-	const { title, date, description, path, tags } = post;
+	const { title, date, description, slug, tags } = post;
 </script>
 
 <a
 	class="grid gap-4 md:gap-8 grid-cols-1 md:grid-cols-3 p-4 md:p-8 dark:bg-surface-500 dark:text-tertiary-100 transition hover:bg-surface-200 dark:hover:bg-accent"
-	href={path}
+	href={`/blog/${slug}`}
 >
 	<div>
 		<Title {size} {heading}>

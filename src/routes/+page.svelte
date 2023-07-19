@@ -76,7 +76,7 @@
 			<li class="w-full md:w-auto">
 				<a
 					class="flex flex-col px-4 py-4 border bg-tertiary-500 text-tertiary-50 hover:bg-accent dark:bg-tertiary-500 dark:hover:bg-accent border-accent"
-					href={snippet.path}
+					href={`snippets/${snippet.slug}`}
 				>
 					<Title size="xs" heading="h3">{snippet.title}</Title>
 					<p class="text-xs">{snippet.description}</p>
@@ -104,17 +104,17 @@
 		>My projects</Title
 	>
 	<ul class="grid grid-cols-1 sm:grid-cols-3">
-		{#each data.repos as repo}
+		{#each data.projects as project}
 			<li class="min-h-[200px]">
 				<div class=" flex flex-col justify-between h-full shadow-border">
 					<div class="text-center p-4 flex flex-col justify-center items-center h-full">
 						<Title size="xs" heading="h2" style="mb-1">
-							{repo.title}
+							{project.title}
 						</Title>
-						<p class="text-sm opacity-75">{repo.description}</p>
+						<p class="text-sm opacity-75">{project.description}</p>
 					</div>
 					<a
-						href={repo.path}
+						href={`/projects/${project.slug}`}
 						class="border-t border-accent flex gap-2 text-center transition p-4 items-center justify-center hover:bg-surface-200 dark:hover:bg-accent"
 						>Check it out
 						<Icon icon="arrow" size="sm" />

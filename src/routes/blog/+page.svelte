@@ -14,7 +14,7 @@
 		<p slot="inner-content">Sometimes I try to write stuff and it would end up here.</p>
 	</Hero>
 	<ul class="m-0 flex flex-col">
-		{#each data.markdown as post}
+		{#each data.posts as post}
 			<li class="border-b border-accent">
 				<Post {post} />
 			</li>

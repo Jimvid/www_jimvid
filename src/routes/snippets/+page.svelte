@@ -22,12 +22,12 @@
 				</tr>
 			</thead>
 			<tbody>
-				{#each data.markdown as post}
+				{#each data.posts as post}
 					<tr
 						class="text-sm border-b hover:bg-surface-200 dark:hover:bg-accent relative border-accent"
 					>
 						<td class="p-4 font-semibold">
-							<a class="table-link" href={post.path}>
+							<a class="table-link" href={`/snippets/${post.slug}`}>
 								{post.title}
 							</a>
 						</td>

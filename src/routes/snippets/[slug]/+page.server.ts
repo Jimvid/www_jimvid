@@ -1,7 +1,14 @@
 export const prerender = true;
-import { getSingleMarkdownFile } from '$lib/util';
+import { getMarkdownFiles, type MetaData } from '$lib/util';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async ({ params }) => {
-	return getSingleMarkdownFile(`/src/content/snippets/${params.slug}.md`);
+    const fileMatches = import.meta.glob('/src/content/snippets/*.md');
+    const { posts } = await getMarkdownFiles<MetaData>(fileMatches);
+    const content = posts.find(post => post.slug === params.slug)
+
+    return {
+        ...content
+    }
 };
+

@@ -1,3 +1,4 @@
+export const prerender = true
 import { getMarkdownFiles, type MetaData } from '$lib/util';
 
 export async function load() {
@@ -11,11 +12,11 @@ export async function load() {
 		getMarkdownFiles<MetaData>(projectFiles)
 	];
 
-	const [blogPosts, snippets, projects] = await Promise.all(promises);
+	const [blog, snippets, projects] = await Promise.all(promises);
 
 	return {
-		blogPosts: blogPosts.markdown.slice(0, 3),
-		snippets: snippets.markdown.slice(0, 6),
-		repos: projects.markdown.slice(0, 3)
+		blogPosts: blog.posts.slice(0, 3),
+		snippets: snippets.posts.slice(0, 6),
+		projects: projects.posts.slice(0, 3)
 	};
 }
