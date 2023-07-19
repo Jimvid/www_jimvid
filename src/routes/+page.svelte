@@ -19,8 +19,12 @@
 		architecture, and design systems.
 	</p>
 	<div class="flex justify-center gap-2">
-		<Icon icon="github" />
-		<Icon icon="mail" />
+		<a href="https://github.com/jimvid" target="_blank" rel="noopener">
+			<Icon icon="github" />
+		</a>
+		<a href="mailto:victor@jimvid.com">
+			<Icon icon="mail" />
+		</a>
 	</div>
 </section>
 
@@ -74,13 +78,15 @@
 	<ul class="flex flex-wrap gap-4 px-4 md:px-8 py-8 md:py-16">
 		{#each data.snippets as snippet}
 			<li class="w-full md:w-auto">
-				<a
-					class="flex flex-col px-4 py-4 border bg-tertiary-500 text-tertiary-50 hover:bg-accent dark:bg-tertiary-500 dark:hover:bg-accent border-accent"
-					href={`snippets/${snippet.slug}`}
-				>
-					<Title size="xs" heading="h3">{snippet.title}</Title>
-					<p class="text-xs">{snippet.description}</p>
-				</a>
+				<article>
+					<a
+						class="flex flex-col px-4 py-4 border bg-tertiary-500 text-tertiary-50 hover:bg-accent dark:bg-tertiary-500 dark:hover:bg-accent border-accent"
+						href={`snippets/${snippet.slug}`}
+					>
+						<Title size="xs" heading="h3">{snippet.title}</Title>
+						<p class="text-xs">{snippet.description}</p>
+					</a>
+				</article>
 			</li>
 		{/each}
 
@@ -106,7 +112,7 @@
 	<ul class="grid grid-cols-1 sm:grid-cols-3">
 		{#each data.projects as project}
 			<li class="min-h-[200px]">
-				<div class=" flex flex-col justify-between h-full shadow-border">
+				<article class=" flex flex-col justify-between h-full shadow-border">
 					<div class="text-center p-4 flex flex-col justify-center items-center h-full">
 						<Title size="xs" heading="h2" style="mb-1">
 							{project.title}
@@ -119,7 +125,7 @@
 						>Check it out
 						<Icon icon="arrow" size="sm" />
 					</a>
-				</div>
+				</article>
 			</li>
 		{/each}
 	</ul>

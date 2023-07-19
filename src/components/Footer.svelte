@@ -10,9 +10,12 @@
 	>
 		<p class="mb-2 sm:mb-0">© 2023 Victor Jimvid</p>
 		<div class="flex gap-3 justify-center">
-			<Icon icon="mail" darkColor="surface-50" lightColor="surface-500" />
-			<Icon icon="linkedin" darkColor="surface-50" lightColor="surface-500" />
-			<Icon icon="github" darkColor="surface-50" lightColor="surface-500" />
+			<a href="https://github.com/jimvid" target="_blank" rel="noopener">
+				<Icon icon="github" />
+			</a>
+			<a href="mailto:victor@jimvid.com">
+				<Icon icon="mail" />
+			</a>
 		</div>
 	</div>
 </div>

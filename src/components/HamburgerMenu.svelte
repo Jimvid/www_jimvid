@@ -12,7 +12,7 @@
 	</button>
 	{#if isOpen}
 		<div
-			class="p-8  fixed left-0 top-0 w-full bg-surface-50 dark:bg-surface-500 z-20 h-full flex flex-col justify-between"
+			class="p-8 fixed left-0 top-0 w-full bg-surface-50 dark:bg-surface-500 z-20 h-full flex flex-col justify-between"
 		>
 			<nav class="text-3xl font-bold">
 				<button class="text-sm flex gap-2 mb-8" on:click={toggleMenu}>
@@ -36,9 +36,8 @@
 
 			<div>
 				<p class="mb-2">You can find me here</p>
-				<div class="flex gap-3 ">
+				<div class="flex gap-3">
 					<Icon icon="mail" darkColor="surface-50" lightColor="surface-500" />
-					<Icon icon="linkedin" darkColor="surface-50" lightColor="surface-500" />
 					<Icon icon="github" darkColor="surface-50" lightColor="surface-500" />
 				</div>
 			</div>
