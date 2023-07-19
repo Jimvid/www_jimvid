@@ -5,9 +5,11 @@
 
 <section>
 	<div class="border-b border-accent">
-		<nav class="p-4 flex gap-2 dark:text-white dark:bg-tertiary-500">
-			Skills:
-			<ul class="flex gap-4">
+		<nav
+			class="p-4 flex gap-2 flex-col text-xs sm:text-sm sm:flex-row dark:text-white dark:bg-tertiary-500"
+		>
+			<p>Skills:</p>
+			<ul class="flex gap-4 flex-wrap">
 				<li>
 					<a aria-current={$page.url.pathname === '/skills/html-css'} href="html-css">HTML & CSS</a>
 				</li>
