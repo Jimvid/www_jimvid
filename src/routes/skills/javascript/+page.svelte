@@ -3,6 +3,11 @@
 	import Title from 'components/Title.svelte';
 </script>
 
+<svelte:head>
+	<title>Skills - Javascript</title>
+	<meta name="description" content="" />
+</svelte:head>
+
 <SkillPage next_label="Backend" next_url="backend">
 	<Title size="xl" slot="title">Crafting interactive web experiences with JavaScript.</Title>
 	<div slot="description">

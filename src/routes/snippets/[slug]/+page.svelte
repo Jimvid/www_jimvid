@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>Blog | {data.title}</title>
+	<title>Snippets | {data.title}</title>
 	<meta name="description" content="single post" />
 </svelte:head>
 

@@ -5,9 +5,9 @@
 	import HamburgerMenu from './HamburgerMenu.svelte';
 </script>
 
-<div class="border-b border-accent">
+<div class="border-b border-t border-accent">
 	<AppBar
-		class="max-w-content m-auto border-t border-accent"
+		class="max-w-content m-auto border-accent"
 		background="transparent"
 		padding="pt-0 pb-0"
 		gridColumns="grid-cols-[0rem_minmax(0,_1fr)_0rem]"

@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>Skills - Backend</title>
+	<title>Skills - HTML & CSS</title>
 	<meta name="description" content="" />
 </svelte:head>
 
