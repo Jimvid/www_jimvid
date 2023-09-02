@@ -6,9 +6,9 @@ import sveltePreprocess from 'svelte-preprocess';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-        prerender: {
-            handleHttpError: "fail"
-        },
+		prerender: {
+			handleHttpError: 'fail'
+		},
 		adapter: adapter({
 			edge: false,
 			split: false

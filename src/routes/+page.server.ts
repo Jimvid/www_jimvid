@@ -1,4 +1,4 @@
-export const prerender = true
+export const prerender = true;
 import { getMarkdownFiles, type MetaData } from '$lib/util';
 
 export async function load() {
