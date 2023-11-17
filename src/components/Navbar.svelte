@@ -15,7 +15,7 @@
 	>
 		<div class="ml-4">
 			<a class="hidden sm:inline" href="/">
-				<Icon icon="logo" size="md" />
+				<img src="/images/avatar.png" alt="logo" class="w-8 h-8" />
 			</a>
 			<HamburgerMenu style="sm:hidden" />
 		</div>
