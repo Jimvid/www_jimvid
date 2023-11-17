@@ -26,7 +26,7 @@
 			<p class="mb-2 opacity-80 text-sm">{date}</p>
 			<ul class="flex gap-2">
 				{#each tags as tag}
-					<li class="{matchTagToColor(tag)} border border-accent p-1 text-xs text-surface-500">
+					<li class="{matchTagToColor(tag)} border border-accent p-1 text-xs">
 						<p>{tag}</p>
 					</li>
 				{/each}

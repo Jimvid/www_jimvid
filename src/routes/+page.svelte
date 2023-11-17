@@ -15,11 +15,11 @@
 <section class="flex flex-col justify-center text-center border-b border-accent py-12 px-4 md:px-8">
 	<Title size="xl" style="md:p-4 md:pb-2">Hi, I'm Victor</Title>
 	<p class="m-auto text-md font-medium max-w-2xl p-2 md:p-4 md:pt-2 lg:text-xl">
-		I am a developer and design enthusiast with a keen interest in user experience, software
+		I'm a developer and design enthusiast with a keen interest in user experience, software
 		architecture, and design systems.
 	</p>
 	<div class="flex justify-center gap-2">
-		<a href="https://github.com/jimvid" target="_blank" rel="noopener">
+		<a href="https://github.com/jimvid" target="_blank" rel="noreferrer">
 			<Icon icon="github" />
 		</a>
 		<a href="mailto:victor@jimvid.com">

@@ -55,16 +55,17 @@ export const getMarkdownFiles: GetMarkdownFiles = async <T>(
 	return { posts: sortedPosts };
 };
 
-type TagColor = 'css' | 'typescript' | 'javascript' | 'fundamentals' | 'react' | 'svelte';
+type TagColor = 'css' | 'html' | 'typescript' | 'javascript' | 'fundamentals' | 'react' | 'svelte';
 
 export const matchTagToColor = (text: TagColor) => {
 	const colors: Record<TagColor, string> = {
-		css: 'bg-red-500',
-		typescript: 'bg-blue-500',
-		javascript: 'bg-yellow-500',
-		fundamentals: 'bg-purple-500',
-		react: 'bg-teal-500',
-		svelte: 'bg-orange-500'
+		css: 'bg-css',
+		typescript: 'bg-typescript',
+		javascript: 'bg-javascript text-surface-500',
+		html: 'bg-html text-surface-500',
+		fundamentals: 'bg-fundamentals',
+		react: 'bg-react',
+		svelte: 'bg.svelte'
 	};
 
 	const tag = text.toLowerCase() as TagColor;
