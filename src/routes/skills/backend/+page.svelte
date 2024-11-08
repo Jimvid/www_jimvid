@@ -20,11 +20,10 @@
 		</p>
 		<p class="mt-8 mb-4">Technologies that i use:</p>
 		<ul class="list-disc list-inside ml-2">
-			<li>Node</li>
-			<li>Express</li>
+			<li>NodeJS</li>
+            <li>Typescript</li>
+            <li>Go</li>
 			<li>Postgres</li>
-			<li>Prisma</li>
-			<li>Typescript</li>
 		</ul>
 	</div>
 </SkillPage>
