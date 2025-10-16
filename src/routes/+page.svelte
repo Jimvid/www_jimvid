@@ -53,27 +53,9 @@
 		</li>
 	</ul>
 </section>
-<section class="border-y border-accent">
-	<Title heading="h2" size="lg" style="py-8 px-4 md:py-14 md:px-10 border-b border-accent"
-		>Recent posts</Title
-	>
-	<ul class="m-0 flex flex-col">
-		{#each data.blogPosts as post}
-			<li class="border-b border-accent last:border-transparent">
-				<Post {post} size="sm" heading="h3" />
-			</li>
-		{/each}
-	</ul>
-	<a
-		href="/blog"
-		class="p-8 border-accent flex items-center gap-2 justify-center border-t w-full text-2xl font-bold transition-all hover:bg-accent"
-		><span>View all blogposts </span><Icon icon="arrow" /></a
-	>
-</section>
-
 <section class="border-b border-accent">
 	<Title heading="h2" size="lg" style="py-8 px-4 md:py-14 md:px-10 border-b border-accent"
-		>Latest Snippets</Title
+		>Snippets</Title
 	>
 	<ul class="flex flex-wrap gap-4 px-4 md:px-8 py-8 md:py-16">
 		{#each data.snippets as snippet}
@@ -107,7 +89,7 @@
 		size="lg"
 		heading="h2"
 		style="text-tertiary-500 dark:text-tertiary-50 py-8 px-4 md:py-14 md:px-10 border-b border-accent"
-		>My projects</Title
+		>Projects</Title
 	>
 	<ul class="grid grid-cols-1 sm:grid-cols-3">
 		{#each data.projects as project}

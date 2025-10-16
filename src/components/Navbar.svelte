@@ -21,7 +21,6 @@
 		</div>
 		<div class="flex sm:border-l border-accent items-center">
 			<div class="hidden sm:flex px-8 gap-4 font-semibold p-4">
-				<a class="items-center content-center flex" href="/blog">Blog</a>
 				<a class="items-center content-center flex" href="/snippets">Snippets</a>
 				<a class="items-center content-center flex" href="/projects">Projects</a>
 			</div>
